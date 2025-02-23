@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        davano: {
+          primary: "#19FFE7",
+          "primary-dark": "#4AAAA0",
+          secondary: "#FE6219",
+          "secondary-light": "#FF8E59",
+          brown: "#BF6A43",
+          "brown-dark": "#805D4D",
+          "primary-darken": "#415553"
+        }
       },
     },
   },
