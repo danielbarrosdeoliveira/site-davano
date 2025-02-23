@@ -1,0 +1,10 @@
+{
+  "endOfLine": "lf",
+  "arrowParens": "always",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "semi": false,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
