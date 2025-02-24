@@ -5,11 +5,13 @@ import './globals.css'
 const playfairDisplay = Playfair_Display({
   weight: ['400', '700'],
   subsets: ['latin'],
+  variable: '--font-playfair',
 })
 
 const poppins = Poppins({
   weight: ['300', '400', '700'],
   subsets: ['latin'],
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
@@ -23,11 +25,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${playfairDisplay.className} ${poppins.className} antialiased`}
-      >
-        {children}
+    <html
+      lang="pt-BR"
+      className={`${playfairDisplay.variable} ${poppins.variable}`}
+    >
+      <body className="antialiased">
+        <main>{children}</main>
       </body>
     </html>
   )

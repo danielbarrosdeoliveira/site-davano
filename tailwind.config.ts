@@ -21,6 +21,10 @@ export default {
           "primary-darken": "#415553"
         }
       },
+      fontFamily: {
+        playfair: ['var(--font-playfair)', 'serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+      },
     },
   },
   plugins: [],
