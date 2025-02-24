@@ -30,7 +30,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className="h-11 w-32 rounded-sm bg-davano-secondary text-xs font-bold uppercase transition-colors duration-300 hover:bg-davano-secondary-light">
+        <button className="w-32 rounded-sm bg-davano-secondary py-4 text-xs font-bold uppercase transition-colors duration-300 hover:bg-davano-secondary-light">
           Agendar
         </button>
       </div>
