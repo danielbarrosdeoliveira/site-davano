@@ -1,6 +1,7 @@
+import './globals.css'
+
 import type { Metadata } from 'next'
 import { Playfair_Display, Poppins } from 'next/font/google'
-import './globals.css'
 
 const playfairDisplay = Playfair_Display({
   weight: ['400', '700'],
