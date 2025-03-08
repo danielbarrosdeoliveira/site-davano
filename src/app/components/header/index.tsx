@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <header className="flex h-20 items-center justify-center bg-stone-900">
-      <div className="mx-auto flex w-full max-w-[1024px] items-center justify-between px-8">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-8">
         <div className="relative h-16 w-16 object-contain">
           <Image src="/images/logo-davano.svg" fill alt="Logo Davano" />
         </div>

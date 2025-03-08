@@ -4,7 +4,7 @@ const Presentation = () => {
       id="presentation"
       className="h-80 bg-[url('/images/presentation.webp')] bg-cover bg-center bg-no-repeat"
     >
-      <div className="mx-auto flex w-full max-w-[1024px] flex-col pl-24">
+      <div className="mx-auto flex w-full max-w-5xl flex-col pl-24">
         <h3 className="w-3/6 pt-16 font-playfair text-4xl">
           Mais que um corte, uma experiência de cuidado e estilo.
         </h3>

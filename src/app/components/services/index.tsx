@@ -7,7 +7,7 @@ const Services = () => {
         Serviços
       </h3>
 
-      <div className="mx-auto mt-8 flex max-w-[1024px] flex-col items-center">
+      <div className="mx-auto mt-8 flex max-w-5xl flex-col items-center">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="flex w-64 flex-col items-center justify-center">
             <Image
