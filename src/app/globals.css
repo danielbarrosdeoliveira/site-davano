@@ -18,3 +18,18 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+/* SWIPER JS */
+
+/* Estilizando a cor dos botões de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fe6219 !important;
+}
+
+/* Se quiser um efeito ao passar o mouse */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transition: color 0.2s ease-in-out;
+  color: #ff8e59 !important; /* Cor diferente ao passar o mouse */
+}
