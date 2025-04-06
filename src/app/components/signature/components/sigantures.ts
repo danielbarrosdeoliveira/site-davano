@@ -13,30 +13,19 @@ export const signatures: Signature[] = [
     price: 29.9,
   },
   {
-    id: 2,
-    title: 'Plano One Barba',
+    id: 6,
+    title: 'Plano Premier Corte e Barba',
     description: [
-      '✅ Preço menor que avulso',
+      '✅ Corte e barba ilimitados',
+      '✅ Segunda a quarta',
       '✅ Atendimento profissional',
-      '✅ 20% de desconto em todos os seviços extras',
-      '❌ Não inclui corte',
+      '❌ Quinta e sexta',
     ],
-    price: 29.9,
-  },
-  {
-    id: 3,
-    title: 'Plano One Corte/Barba',
-    description: [
-      '✅ Preço menor que avulso',
-      '✅ Atendimento profissional',
-      '❌ Sem retoques ou cortes extras',
-      '❌ Um atendimento mensal',
-    ],
-    price: 54.9,
+    price: 99.9,
   },
   {
     id: 4,
-    title: 'Plano Corte',
+    title: 'Plano Premier Corte',
     description: [
       '✅ Cortes ilimitados',
       '✅ Segunda a quarta',
@@ -46,9 +35,10 @@ export const signatures: Signature[] = [
     ],
     price: 54.9,
   },
+
   {
     id: 5,
-    title: 'Plano Barba',
+    title: 'Plano Premier Barba',
     description: [
       '✅ Retoques de barba ilimitados',
       '✅ Segunda a quarta',
@@ -57,17 +47,6 @@ export const signatures: Signature[] = [
       '❌ Quinta e sexta',
     ],
     price: 54.9,
-  },
-  {
-    id: 6,
-    title: 'Plano Corte + Barba',
-    description: [
-      '✅ Corte e barba ilimitados',
-      '✅ Segunda a quarta',
-      '✅ Atendimento profissional',
-      '❌ Quinta e sexta',
-    ],
-    price: 99.9,
   },
   {
     id: 7,
@@ -101,5 +80,27 @@ export const signatures: Signature[] = [
       '✅ Agendamento flexível',
     ],
     price: 119.9,
+  },
+  {
+    id: 2,
+    title: 'Plano One Barba',
+    description: [
+      '✅ Preço menor que avulso',
+      '✅ Atendimento profissional',
+      '✅ 20% de desconto em todos os seviços extras',
+      '❌ Não inclui corte',
+    ],
+    price: 29.9,
+  },
+  {
+    id: 3,
+    title: 'Plano One Corte/Barba',
+    description: [
+      '✅ Preço menor que avulso',
+      '✅ Atendimento profissional',
+      '❌ Sem retoques ou cortes extras',
+      '❌ Um atendimento mensal',
+    ],
+    price: 54.9,
   },
 ]
