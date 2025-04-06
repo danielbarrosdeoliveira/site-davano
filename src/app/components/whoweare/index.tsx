@@ -3,11 +3,11 @@ import Image from 'next/image'
 const WhoWeAre = () => {
   return (
     <section className="mx-auto flex w-full justify-center bg-stone-50 text-stone-900">
-      <div className="mx-auto max-w-5xl py-16">
+      <div className="container mx-auto max-w-5xl py-16">
         <h3 className="text-center font-playfair text-3xl font-bold">
           Quem Somos?
         </h3>
-        <p className="mx-auto w-8/12 justify-center pt-8 text-center text-base">
+        <p className="mx-auto justify-center pt-8 text-center text-base">
           Na nossa barbearia, cada corte e cada atendimento são realizados com
           excelência. Com anos de experiência, nos dedicamos a oferecer um
           serviço de alta qualidade, focado em cuidar de cada detalhe para
@@ -17,7 +17,7 @@ const WhoWeAre = () => {
           realçar seu estilo.
         </p>
 
-        <div className="mt-8 flex items-center justify-evenly">
+        <div className="mt-8 flex flex-col items-center justify-evenly gap-4 sm:flex-row">
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center">
               <Image
@@ -28,7 +28,7 @@ const WhoWeAre = () => {
               />
               <h4 className="font-playfair text-xl font-bold">Missão</h4>
             </div>
-            <p className="w-64 text-center">
+            <p className="text-center sm:w-64">
               Oferecer uma experiência única e premium em cuidados masculinos,
               proporcionando cortes de cabelo e serviços de barba com
               excelência, atenção aos detalhes e dedicação, garantindo a
@@ -46,7 +46,7 @@ const WhoWeAre = () => {
                 />
                 <h4 className="font-playfair text-xl font-bold">Visão</h4>
               </div>
-              <p className="w-64 text-center">
+              <p className="text-center sm:w-64">
                 Oferecer uma experiência única e premium em cuidados masculinos,
                 proporcionando cortes de cabelo e serviços de barba com
                 excelência, atenção aos detalhes e dedicação, garantindo a
@@ -56,7 +56,7 @@ const WhoWeAre = () => {
           </div>
         </div>
 
-        <div className="mt-2">
+        <div className="mt-8 sm:mt-2">
           <div className="flex flex-col items-center text-stone-900">
             <Image
               src="icons/handshake.svg"
@@ -65,10 +65,10 @@ const WhoWeAre = () => {
               alt="Missão da Davano"
               className="currentColor"
             />
-            <h4 className="font-playfair text-xl font-bold">Valores</h4>
+            <h4 className="mb-4 font-playfair text-xl font-bold">Valores</h4>
           </div>
           <div className="flex justify-center text-center">
-            <ul className="flex flex-col">
+            <ul className="flex flex-col gap-4">
               <li className="self-start">
                 <span className="font-bold">Profissionalismo: </span>
                 <p className="inline-block">

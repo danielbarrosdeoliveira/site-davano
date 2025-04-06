@@ -3,9 +3,8 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <footer>
-      <div className="container flex items-center justify-between py-16">
-        {/* LADO ESQUERDO */}
-        <div className="flex w-1/3 justify-start">
+      <div className="container flex flex-col flex-wrap items-center justify-center gap-4 py-16 md:flex-row md:justify-between md:gap-0">
+        <div className="flex md:w-1/3 md:justify-start">
           <a href="">
             <Image
               src="/icons/instagram.svg"
@@ -16,8 +15,7 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* CENTRO: Alinhado com flex */}
-        <div className="flex w-1/3 justify-center">
+        <div className="flex justify-center sm:w-1/3">
           <Image
             src="/images/logo-davano.svg"
             width={64}
@@ -26,9 +24,8 @@ const Footer = () => {
           />
         </div>
 
-        {/* LADO DIREITO */}
-        <div className="flex w-1/3 flex-col items-end text-right font-playfair text-lg">
-          <p>&copy; 2025 Barbearia Davano</p>
+        <div className="flex flex-col items-center text-center font-playfair text-lg md:w-1/3 md:items-end md:text-right">
+          <p className="">&copy; 2025 Barbearia Davano</p>
           <p>Desenvolvido por DCF Soluções de TI</p>
         </div>
       </div>
