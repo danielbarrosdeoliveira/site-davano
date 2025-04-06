@@ -1,3 +1,4 @@
+import FAQ from './components/faq'
 import Header from './components/header'
 import Presentation from './components/presentation'
 import Services from './components/services'
@@ -12,6 +13,7 @@ export default function Home() {
       <WhoWeAre />
       <Services />
       <Signature />
+      <FAQ />
     </>
   )
 }
