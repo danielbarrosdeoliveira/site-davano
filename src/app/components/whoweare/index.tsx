@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 const WhoWeAre = () => {
   return (
-    <section className="mx-auto flex w-full justify-center bg-stone-50 text-stone-900">
+    <section
+      id="quem-somos"
+      className="mx-auto flex w-full justify-center bg-stone-50 text-stone-900"
+    >
       <div className="container mx-auto max-w-5xl py-16">
         <h3 className="text-center font-playfair text-3xl font-bold">
           Quem Somos?

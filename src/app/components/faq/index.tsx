@@ -25,7 +25,7 @@ const FAQ = () => {
   }
 
   return (
-    <section className="bg-slate-50">
+    <section id="faq" className="bg-slate-50">
       <div className="container mx-auto max-w-3xl py-16">
         <h2 className="mb-6 text-center text-2xl font-bold text-stone-900">
           Perguntas Frequentes

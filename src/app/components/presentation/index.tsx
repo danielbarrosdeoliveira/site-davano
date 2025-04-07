@@ -2,7 +2,7 @@ const Presentation = () => {
   return (
     <section
       id="presentation"
-      className="h-80 bg-[url('/images/presentation.webp')] bg-cover bg-center bg-no-repeat"
+      className="h-72 bg-[url('/images/presentation.webp')] bg-cover bg-center bg-no-repeat sm:h-80"
     >
       <div className="container mx-auto flex w-full max-w-5xl flex-col">
         <h3 className="pt-16 font-playfair text-2xl md:w-3/6 md:text-4xl">

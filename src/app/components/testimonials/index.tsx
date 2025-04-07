@@ -67,14 +67,14 @@ const Testimonials = () => {
   }
 
   return (
-    <section className="bg-slate-50 py-16">
+    <section id="depoimentos" className="bg-slate-50 py-16">
       <h2 className="mb-10 text-center text-3xl font-bold text-stone-900">
         O que nossos clientes dizem?
       </h2>
 
       <div
         ref={scrollRef}
-        className="hide-scrollbar cursor-grab snap-x snap-mandatory overflow-x-auto scroll-smooth text-center active:cursor-grabbing"
+        className="hide-scrollbar ml-4 cursor-grab snap-x snap-mandatory overflow-x-auto scroll-smooth text-center active:cursor-grabbing sm:ml-0"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
@@ -84,7 +84,7 @@ const Testimonials = () => {
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="min-w-[280px] max-w-sm flex-shrink-0 snap-center rounded-lg bg-davano-primary-darken px-2 py-4 text-white shadow-md"
+              className="w-full max-w-60 flex-shrink-0 snap-center rounded-lg bg-davano-primary-darken px-2 py-4 text-white shadow-md md:max-w-96"
             >
               <p className="text-md mb-6 leading-relaxed">{item.text}</p>
               <div className="flex flex-col items-center gap-4">

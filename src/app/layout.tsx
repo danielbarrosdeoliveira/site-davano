@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${playfairDisplay.variable} ${poppins.variable}`}
+      className={`${playfairDisplay.variable} ${poppins.variable} scroll-smooth`}
     >
       <body className="antialiased">
         <main>{children}</main>
