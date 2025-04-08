@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex h-20 items-center justify-center bg-stone-900">
+      <header className="flex h-20 items-center justify-center bg-stone-900 text-slate-50">
         <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-8">
           <div className="relative h-12 w-12 object-contain sm:h-16 sm:w-16">
             <Image src="/images/logo-davano.svg" fill alt="Logo Davano" />
