@@ -11,22 +11,37 @@ type Signature = {
 const signatures: Signature[] = [
   {
     id: 1,
-    title: 'Essencial',
-    description: ['Corte de cabelo', 'Barba simples', '1 visita por mês'],
-    price: 59.9,
+    title: 'One Barba',
+    description: [
+      '✅ Cuidados com Barba',
+      '✅ 1 visita por mês',
+      '✅ Desconto de 20% em todos os serviços adicionais',
+      '❌ Quinta à sábado',
+    ],
+    price: 29.9,
   },
   {
     id: 2,
-    title: 'Premium',
-    description: ['Corte + Barba completa', 'Massagem facial', '2 visitas/mês'],
-    price: 109.9,
+    title: 'One Cabelo',
+    description: [
+      '✅ Corte Cabelo',
+      '✅ 1 visita por mês',
+      '✅ Desconto de 20% em todos os serviços adicionais',
+      '❌ Quinta à sábado',
+    ],
+    price: 29.9,
     recommended: true,
   },
   {
     id: 3,
-    title: 'VIP',
-    description: ['Tudo do Premium', 'Produtos exclusivos', 'Visita ilimitada'],
-    price: 199.9,
+    title: 'One Cabelo/Barba',
+    description: [
+      '✅ Corte Cabelo + Barba',
+      '✅ 1 visita por mês',
+      '✅ Desconto de 20% em todos os serviços adicionais',
+      '❌ Quinta à sábado',
+    ],
+    price: 59.9,
   },
 ]
 
@@ -37,12 +52,12 @@ const Signature = () => {
         Assinaturas
       </h3>
 
-      <div className="scrollbar-hide mx-auto mt-8 max-w-6xl overflow-x-auto px-4">
+      <div className="scrollbar-hide mx-auto mt-8 max-w-6xl overflow-x-auto px-4 md:flex md:justify-center">
         <div className="flex w-max gap-6 pb-4">
           {signatures.map((signature) => (
             <div
               key={signature.id}
-              className="flex h-96 w-72 min-w-[18rem] flex-col items-center justify-center gap-6 rounded-md bg-stone-50 px-6 text-center shadow-sm"
+              className="flex h-96 w-72 min-w-[18rem] flex-col items-center justify-center gap-6 rounded-md bg-davano-brown-dark px-6 text-center shadow-sm"
             >
               <h3 className="font-playfair text-xl font-bold tracking-wider">
                 {signature.title}
