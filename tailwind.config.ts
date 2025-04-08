@@ -24,6 +24,7 @@ export default {
           'secondary-light': '#FF8E59',
           brown: '#BF6A43',
           'brown-dark': '#805D4D',
+          'brown-darkest': '#42342E',
           'primary-darken': '#415553',
         },
       },

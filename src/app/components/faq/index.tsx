@@ -25,9 +25,9 @@ const FAQ = () => {
   }
 
   return (
-    <section id="faq" className="bg-slate-50">
+    <section id="faq" className="bg-davano-brown-darkest">
       <div className="container mx-auto max-w-3xl py-16">
-        <h2 className="mb-6 text-center text-2xl font-bold text-stone-900">
+        <h2 className="mb-16 text-center font-playfair text-3xl font-bold text-slate-50">
           Perguntas Frequentes
         </h2>
         <div className="space-y-4">
@@ -46,7 +46,6 @@ const FAQ = () => {
                 </span>
               </button>
 
-              {/* ANIMATED ANSWER */}
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'mt-2 max-h-40 opacity-100' : 'max-h-0 opacity-0'} `}
               >

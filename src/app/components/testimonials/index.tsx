@@ -67,8 +67,8 @@ const Testimonials = () => {
   }
 
   return (
-    <section id="depoimentos" className="bg-slate-50 py-16">
-      <h2 className="mb-10 text-center text-3xl font-bold text-stone-900">
+    <section id="depoimentos" className="bg-davano-brown-darkest py-16">
+      <h2 className="mb-16 text-center font-playfair text-3xl font-bold text-slate-50">
         O que nossos clientes dizem?
       </h2>
 

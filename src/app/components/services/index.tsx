@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 const Services = () => {
   return (
-    <section id="servicos" className="bg-davano-primary-darken py-16">
+    <section
+      id="servicos"
+      className="bg-davano-primary-darken py-16 text-slate-50"
+    >
       <h3 className="text-center font-playfair text-3xl font-bold tracking-wide">
         Serviços
       </h3>

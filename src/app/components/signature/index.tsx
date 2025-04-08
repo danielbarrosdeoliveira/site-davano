@@ -47,8 +47,11 @@ const signatures: Signature[] = [
 
 const Signature = () => {
   return (
-    <section id="assinaturas" className="bg-davano-primary-darken pb-16 pt-10">
-      <h3 className="text-center font-playfair text-3xl font-bold tracking-wide text-stone-50">
+    <section
+      id="assinaturas"
+      className="bg-davano-primary-darken pb-16 pt-10 text-stone-50"
+    >
+      <h3 className="text-center font-playfair text-3xl font-bold tracking-wide">
         Assinaturas
       </h3>
 
@@ -57,7 +60,7 @@ const Signature = () => {
           {signatures.map((signature) => (
             <div
               key={signature.id}
-              className="flex h-96 w-72 min-w-[18rem] flex-col items-center justify-center gap-6 rounded-md bg-davano-brown-dark px-6 text-center shadow-sm"
+              className="bg-davano-brown-darkest flex h-96 w-72 min-w-[18rem] flex-col items-center justify-center gap-6 rounded-md px-6 text-center shadow-sm"
             >
               <h3 className="font-playfair text-xl font-bold tracking-wider">
                 {signature.title}
