@@ -1,10 +1,12 @@
-import Image from 'next/image'
+import Binoculars from '../icons/Binoculars'
+import Handshake from '../icons/Handshake'
+import Target from '../icons/Target'
 
 const WhoWeAre = () => {
   return (
     <section
       id="quem-somos"
-      className="mx-auto flex w-full justify-center bg-stone-50 text-stone-900"
+      className="mx-auto flex w-full justify-center bg-davano-brown-dark text-slate-50"
     >
       <div className="container mx-auto max-w-5xl py-16">
         <h3 className="text-center font-playfair text-3xl font-bold">
@@ -20,16 +22,11 @@ const WhoWeAre = () => {
           realçar seu estilo.
         </p>
 
-        <div className="mt-8 flex flex-col items-center justify-evenly gap-4 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-evenly gap-8 sm:flex-row">
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center">
-              <Image
-                src="icons/target.svg"
-                width={32}
-                height={32}
-                alt="Missão da Davano"
-              />
-              <h4 className="font-playfair text-xl font-bold">Missão</h4>
+              <Target />
+              <h4 className="mb-4 font-playfair text-xl font-bold">Missão</h4>
             </div>
             <p className="text-center sm:w-64">
               Oferecer uma experiência única e premium em cuidados masculinos,
@@ -41,13 +38,8 @@ const WhoWeAre = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="mx-auto flex flex-col items-center">
               <div className="flex flex-col items-center">
-                <Image
-                  src="icons/binoculars.svg"
-                  width={32}
-                  height={32}
-                  alt="icone para visão da Davano"
-                />
-                <h4 className="font-playfair text-xl font-bold">Visão</h4>
+                <Binoculars />
+                <h4 className="mb-4 font-playfair text-xl font-bold">Visão</h4>
               </div>
               <p className="text-center sm:w-64">
                 Oferecer uma experiência única e premium em cuidados masculinos,
@@ -60,14 +52,8 @@ const WhoWeAre = () => {
         </div>
 
         <div className="mt-8 sm:mt-2">
-          <div className="flex flex-col items-center text-stone-900">
-            <Image
-              src="icons/handshake.svg"
-              width={32}
-              height={32}
-              alt="Missão da Davano"
-              className="currentColor"
-            />
+          <div className="flex flex-col items-center">
+            <Handshake />
             <h4 className="mb-4 font-playfair text-xl font-bold">Valores</h4>
           </div>
           <div className="flex justify-center text-center">
