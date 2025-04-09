@@ -4,16 +4,29 @@ import { useState } from 'react'
 
 const faqData = [
   {
-    question: 'Qual é o prazo de entrega?',
-    answer: 'O prazo médio é de 3 a 5 dias úteis.',
+    question: '1. O que é assinatura?',
+    answer:
+      'É um plano mensal com valor fixo e acessível, pensado para você manter cabelo e barba sempre em dia, sem preocupação.',
   },
   {
-    question: 'Vocês oferecem reembolsos?',
-    answer: 'Sim, aceitamos devoluções em até 7 dias após o recebimento.',
+    question: '2. Como funciona a assinatura?',
+    answer:
+      'Funciona como um serviço de streaming, como a Netflix ou Amazon. A cobrança é recorrente, ou seja, automática todo mês, então você só precisa aproveitar o serviço.',
   },
   {
-    question: 'Quais formas de pagamento são aceitas?',
-    answer: 'Aceitamos cartões de crédito, débito e Pix.',
+    question: '3. Nossas assinaturas têm fidelidade?',
+    answer:
+      'Não! No momento, nossas assinaturas não têm fidelidade. Queremos que você experimente com liberdade, sem compromisso.',
+  },
+  {
+    question: '4. Tenho que cortar somente com um barbeiro',
+    answer:
+      'Não! Com a assinatura, você tem liberdade para escolher: pode ser atendido por ordem de chegada ou com agendamento, dependendo da sua preferência e da disponibilidade do time.',
+  },
+  {
+    question: '5. Outra pessoa pode utilizar minha assinatura?',
+    answer:
+      'Não. A assinatura é pessoal e intransferível, válida apenas para quem contratou o plano.',
   },
 ]
 
@@ -26,8 +39,8 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="bg-davano-brown-darkest">
-      <div className="container mx-auto max-w-3xl py-16">
-        <h2 className="mb-16 text-center font-playfair text-3xl font-bold text-slate-50">
+      <div className="container mx-auto max-w-3xl py-12 sm:py-16">
+        <h2 className="mb-16 text-center font-playfair text-3xl font-bold tracking-wide text-slate-50">
           Perguntas Frequentes
         </h2>
         <div className="space-y-4">
@@ -55,6 +68,7 @@ const FAQ = () => {
           ))}
         </div>
       </div>
+      <div className="mx-auto w-full max-w-screen-md border border-b-slate-50" />
     </section>
   )
 }
