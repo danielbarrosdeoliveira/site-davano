@@ -10,38 +10,68 @@ type Signature = {
 
 const signatures: Signature[] = [
   {
-    id: 1,
-    title: 'One Barba',
-    description: [
-      '✅ Cuidados com Barba',
-      '✅ 1 visita por mês',
-      '✅ Desconto de 20% em todos os serviços adicionais',
-      '❌ Quinta à sábado',
-    ],
-    price: 29.9,
-  },
-  {
     id: 2,
-    title: 'One Cabelo',
+    title: 'Premier Corte/Barba',
     description: [
-      '✅ Corte Cabelo',
-      '✅ 1 visita por mês',
+      '✅ Cuidados com Barba e Cabelo',
+      '✅ Visitas ilimitadas de Segunda a Quarta',
       '✅ Desconto de 20% em todos os serviços adicionais',
-      '❌ Quinta à sábado',
     ],
-    price: 29.9,
+    price: 99.9,
     recommended: true,
   },
   {
+    id: 1,
+    title: 'Premier Corte',
+    description: [
+      '✅ Corte de Cabelo',
+      '✅ Visitas ilimitadas de Segunda a Quarta',
+      '✅ Desconto de 20% em todos os serviços adicionais',
+    ],
+    price: 54.9,
+  },
+  {
     id: 3,
+    title: 'Premier Barba',
+    description: [
+      '✅ Cuidados com Barba',
+      '✅ Visitas ilimitadas de Segunda a Quarta',
+      '✅ Desconto de 20% em todos os serviços adicionais',
+    ],
+    price: 59.9,
+  },
+  {
+    id: 4,
     title: 'One Cabelo/Barba',
     description: [
       '✅ Corte Cabelo + Barba',
       '✅ 1 visita por mês',
       '✅ Desconto de 20% em todos os serviços adicionais',
-      '❌ Quinta à sábado',
+      '❌ Apenas de Segunda a Quarta',
     ],
     price: 59.9,
+  },
+  {
+    id: 5,
+    title: 'One Cabelo',
+    description: [
+      '✅ Corte Cabelo',
+      '✅ 1 visita por mês',
+      '✅ Desconto de 20% em todos os serviços adicionais',
+      '❌ Apenas de Segunda a Quarta',
+    ],
+    price: 29.9,
+  },
+  {
+    id: 6,
+    title: 'One Barba',
+    description: [
+      '✅ Cuidados com Barba',
+      '✅ 1 visita por mês',
+      '✅ Desconto de 20% em todos os serviços adicionais',
+      '❌ Apenas de Segunda a Quarta',
+    ],
+    price: 29.9,
   },
 ]
 
@@ -49,18 +79,18 @@ const Signature = () => {
   return (
     <section
       id="assinaturas"
-      className="bg-davano-primary-darken pb-16 pt-10 text-stone-50"
+      className="bg-davano-primary-darken py-12 text-stone-50 sm:py-16"
     >
-      <h3 className="text-center font-playfair text-3xl font-bold tracking-wide">
+      <h2 className="text-center font-playfair text-2xl font-bold tracking-wide sm:text-3xl">
         Assinaturas
-      </h3>
+      </h2>
 
-      <div className="scrollbar-hide mx-auto mt-8 max-w-6xl overflow-x-auto px-4 md:flex md:justify-center">
-        <div className="flex w-max gap-6 pb-4">
+      <div className="mx-auto mt-8 max-w-6xl overflow-hidden px-4">
+        <div className="scrollbar-hide flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth px-1 pb-4">
           {signatures.map((signature) => (
             <div
               key={signature.id}
-              className="bg-davano-brown-darkest flex h-96 w-72 min-w-[18rem] flex-col items-center justify-center gap-6 rounded-md px-6 text-center shadow-sm"
+              className="relative flex h-96 w-72 shrink-0 snap-start flex-col items-center justify-center gap-6 rounded-md bg-davano-brown-darkest px-6 text-center shadow-sm"
             >
               <h3 className="font-playfair text-xl font-bold tracking-wider">
                 {signature.title}
@@ -84,11 +114,23 @@ const Signature = () => {
                 <span className="block text-sm font-light">por mês</span>
               </span>
 
-              <a href="#">
+              <a
+                href={`https://wa.me/5511999627786?text=${encodeURIComponent(
+                  `Olá!\nTenho interesse na assinatura mensal: ${signature.title}`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="w-32 rounded-lg bg-davano-secondary py-3 text-xs font-bold uppercase text-stone-50 transition-colors duration-300 hover:bg-davano-secondary-light">
                   Assinar
                 </button>
               </a>
+
+              {signature.recommended && (
+                <span className="absolute left-0 top-0 rounded-br-md rounded-tl-md bg-davano-secondary px-2 py-1 text-xs font-bold uppercase text-white">
+                  Recomendado
+                </span>
+              )}
             </div>
           ))}
         </div>

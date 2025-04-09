@@ -47,9 +47,14 @@ const Header = () => {
 
           {/* BOTÃO AGENDAR DESKTOP */}
           <div className="hidden md:block">
-            <button className="w-32 rounded-sm bg-davano-secondary py-4 text-xs font-bold uppercase transition-colors duration-300 hover:bg-davano-secondary-light">
+            <a
+              href="https://wa.me/5511999627786?text=Ol%C3%A1!%0ATenho%20interesse%20em%20agendar%20horário"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-32 rounded-sm bg-davano-secondary px-6 py-4 text-xs font-bold uppercase transition-colors duration-300 hover:bg-davano-secondary-light"
+            >
               Agendar
-            </button>
+            </a>
           </div>
 
           {/* BOTÃO MENU MOBILE */}
